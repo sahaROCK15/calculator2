@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="stylesheet" href="style.css">
+  <title>Счётчик калорий</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1 class="header_text">Счётчик калорий</h1>
+            <form class="formFirst">
+                <div>
+                    <h2 class="heading">Пол</h2>
+                    <ul class="switcher">
+                        <li class="switcher__item">
+                          <input id="gender-male" name="gender" value="male" type="radio" checked="" required="">
+                          <label for="gender-male">
+                            Мужчина
+                          </label>
+                        </li>
+                        <li class="switcher__item">
+                          <input id="gender-female" name="gender" value="female" type="radio" required="">
+                          <label for="gender-female">
+                            Женщина
+                          </label>
+                        </li>
+                      </ul>
+                </div>
+                <div class="ageAndStuff">
+                    <div class="inputs-group">
+                        <div class="input">
+                          <div class="heading">
+                            <label class="heading" for="age">
+                              Возраст
+                            </label>
+                            <span class="ageAndStuffMeasury">
+                              лет
+                            </span>
+                          </div>
+                          <div class="input_ageAndStuff">
+                            <input type="text" id="age" name="age"  placeholder="0" width="20px" inputmode="decimal" maxlength="3" required="">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="inputs-group">
+                        <div class="input">
+                          <div class="heading">
+                            <label class="heading" for="age">
+                              Рост
+                            </label>
+                            <span class="ageAndStuffMeasury">
+                              см
+                            </span>
+                          </div>
+                          <div class="input_ageAndStuff">
+                            <input type="text" id="height" name="height"  placeholder="0" inputmode="decimal" maxlength="3" required="">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="inputs-group">
+                        <div class="input">
+                          <div class="heading">
+                            <label class="heading" for="age">
+                              Вес
+                            </label>
+                            <span class="ageAndStuffMeasury">
+                              кг
+                            </span>
+                          </div>
+                          <div class="input_ageAndStuff">
+                            <input type="text" id="weight" name="weight" placeholder="0" inputmode="decimal" maxlength="3" required="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="heading">Физическая активность</h2>
+                <div>
+                    <ul class="radios-group">
+                        <li class="radio">
+                          <div class="radio_wrapper">
+                            <input id="activity-minimal" name="activity" value="min" type="radio" checked="" required="">
+                            <label for="activity-minimal">
+                              Минимальная
+                            </label>
+                          </div>
+                          <p class="radio_description">
+                            Сидячая работа и нет физических нагрузок
+                          </p>
+                        </li>
+                        <li class="radio">
+                          <div class="radio_wrapper">
+                            <input id="activity-low" name="activity" value="low" type="radio" required="">
+                            <label for="activity-low">
+                              Низкая
+                            </label>
+                          </div>
+                          <p class="radio_description">
+                            Редкие, нерегулярные тренировки, активность в быту
+                          </p>
+                        </li>
+                        <li class="radio">
+                          <div class="radio_wrapper">
+                            <input id="activity-medium" name="activity" value="medium" type="radio" required="">
+                            <label for="activity-medium">
+                              Средняя
+                            </label>
+                          </div>
+                          <p class="radio_description">
+                            Тренировки 3-5 раз в неделю
+                          </p>
+                        </li>
+                        <li class="radio">
+                          <div class="radio_wrapper">
+                            <input id="activity-high" name="activity" value="high" type="radio" required="">
+                            <label for="activity-high">
+                              Высокая
+                            </label>
+                          </div>
+                          <p class="radio_description">
+                            Тренировки 6-7 раз в неделю
+                          </p>
+                        </li>
+                        <li class="radio">
+                          <div class="radio_wrapper">
+                            <input id="activity-maximal" name="activity" value="max" type="radio" required="">
+                            <label for="activity-maximal">
+                              Очень высокая
+                            </label>
+                          </div>
+                          <p class="radio_description">
+                            Больше 6 тренировок в неделю и физическая работа
+                          </p>
+                        </li>
+                      </ul>
+                </div>
+                <div class="form__submit">
+                  <button id="submitButton" class="sumbitButton button" name="submit" type="submit" disabled>
+                    Рассчитать
+                  </button>
+                  <button id="resetButton" class="resetButton" name="reset" type="reset" disabled>
+                    <span>
+                      Очистить поля и расчёт
+                    </span>
+                  </button>
+                </div>
+                <p id="answer"></p>
+            </form>
+            <form id="secondForm" class="formSecond hideSecondForm">
+              <h2 class="heading">Ваша норма калорий</h2>
+              <div class="weightResults">
+                <div>
+                  <p id="keepWeight" class="weightResult"></p>
+                  <label for="keepWeight" class="weightLabel"> поддержание веса </label>
+                </div>
+                <div>
+                  <p id="loseWeight" class="weightResult"></p>
+                  <label for="loseWeight" class="weightLabel"> снижение веса </label>
+                </div>
+                <div>
+                  <p id="getWeight" class="weightResult"></p>
+                  <label for="getWeight" class="weightLabel"> набор веса </label>
+                </div>
+              </div>
+            </form>
+            <script src="script.js"></script>
+        </article>
+    </main>
+</body>

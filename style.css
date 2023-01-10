@@ -1,0 +1,130 @@
+body {
+    background-color: #ff7528;
+}
+.header_text {
+    margin: 0;
+    margin-bottom: 22px;
+  
+    color: white;
+    font-size: 64px;
+    line-height: 83px;
+    text-align: center;
+    margin: 0;
+    font-family: "PT Sans Caption", "Arial", sans-serif;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-style: normal;
+  }
+.formFirst{
+    border-radius: 16px;
+    padding: 32px 32px;
+    background-color: white;
+    width: 500px;
+    height: 750px;
+    margin: auto;
+}
+.heading{
+    font-size: 32px;
+    line-height: 41px;
+}
+.switcher {
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  
+    font-family: "PT Sans Caption", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+  
+    border-radius: 4px;
+    list-style: none;
+}
+.ageAndStuff{
+    display: flex;
+    gap: 50px;
+}
+.ageAndStuffMeasury{
+    margin: 0;
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    color: gray;
+    line-height: 30px;
+}
+.input_ageAndStuff{
+    width: 80px;
+}
+.input_ageAndStuff input{
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--color-text-black);
+
+    outline: none;
+    border-radius: 4px;
+    border: 0.5px solid currentColor;
+    background: transparent;
+
+    transition: 0.3s ease;
+    transition-property: color, border;
+}
+.radio_wrapper label {
+  
+    font-size: 20px;
+    line-height: 26px;
+  
+    cursor: pointer;
+    transition: 0.3s ease;
+    transition-property: color, box-shadow;
+}
+.radio_description {
+    margin: 0;
+    margin-left: 32px;
+    margin-top: 3px;
+    padding-bottom: 2px;
+  
+    color: gray;
+}
+.radios-group li{
+    margin: 20px 0;
+}
+.formSecond{
+    border-radius: 16px;
+    padding: 32px 32px;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+.formSecond .heading{
+    font-size: 32px;
+    line-height: 41px;
+    color: #ff7528;
+}
+.hideSecondForm{
+    display: none;
+}
+.weightResults{
+    display: flex;
+    margin-right: 80px;
+    gap: 20px;
+    justify-content: space-around;
+}
+.weightLabel{
+    color: gray;
+}
+.weightResult{
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 400;
+}
